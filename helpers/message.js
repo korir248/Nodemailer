@@ -1,6 +1,5 @@
 require('dotenv').config()
-
-// const content = ""
+const content = require('./icalContent')
 
 const messageObj = {
     from: {
@@ -9,9 +8,9 @@ const messageObj = {
 
     },
     to: 'eugene.korir@thejitu.com',
-    subject: "Sending text",
+    subject: "Sending Calender Invite",
     cc: [
-        "",
+        process.env.EMAIL,
         ""
     ],
     html: 
